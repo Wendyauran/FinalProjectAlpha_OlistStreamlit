@@ -17,3 +17,6 @@ To compete effectively, the platform needs **data-driven customer segmentation**
 # Streamlit Apps
 
 **Olist Dashboard Apps:** [Click Here](https://finalprojectalphaolist.streamlit.app/)
+
+# Github Project:
+**Olist Customer Segmentation Project:** [Click Here](https://github.com/Wendyauran/FinalProjectAlpha_OlistEcommerce)
