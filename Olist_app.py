@@ -319,9 +319,7 @@ def load_model(path):
 try:
     df = load_data(DATA_PATH)
     pipeline = load_model(MODEL_PATH)
-except:
-    st.warning("Pastikan file dataset dan model tersedia di direktori.")
-
+    
 # =========================
 # SIDEBAR MENU
 # =========================
@@ -662,4 +660,5 @@ elif menu == "Prediksi Cluster":
                     )
         else:
             st.info("Silakan Upload File CSV untuk Mulai Prediksi.")
+
             st.session_state.df_hasil_prediksi = None
