@@ -315,12 +315,9 @@ def load_data(path):
 def load_model(path):
     return joblib.load(path)
 
-# Error handling jika file tidak ada
-try:
-    df = load_data(DATA_PATH)
-    pipeline = load_model(MODEL_PATH)
-except:
-    st.warning("Pastikan file dataset dan model tersedia di direktori.")
+# Load data & pipeline
+df = load_data(DATA_PATH)
+pipeline = load_model(MODEL_PATH)
 
 # =========================
 # SIDEBAR MENU
@@ -662,4 +659,5 @@ elif menu == "Prediksi Cluster":
                     )
         else:
             st.info("Silakan Upload File CSV untuk Mulai Prediksi.")
+
             st.session_state.df_hasil_prediksi = None
